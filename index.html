@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>The Finder – Product Reviews</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- <title>The Finder – Product Reviews</title> -->
 </head>
 <body>
   <header>
     <h1>The Finder</h1>
-    <p><em>Never lose your stuff again.</em></p>
+    <p><em>Better sooner than later.</em></p>
   </header>
 
   <section id="description">
@@ -18,58 +19,65 @@
 
   <section id="aboutus">
     <h2>About Us</h2>
-    <p>Starting off as an indie company in 2025-</p>
-    <p>We are teens, duh</p>
+    <p>We are entrepreuneurs. Our last years sales reached 1 000 000$ in revenue.</p>
   </section>
 
-  <section id="reviews">
+
+  <section>
+
     <h2>What People Are Saying</h2>
-
-    <div class="review">
-      <h3>⭐️⭐️⭐️⭐️⭐️</h3>
-      <p>"i lost my ruler in school and found it in 2 min"</p>
-      <small>- alex123_the_ruler</small>
-      <div class="reply">
-        <p class="adminmessg">"Thank you for this review. We appreciate your opinion on our product."</p>
-        <small class="adminuser">- The Finder </small>
+    <section class="review-section">
+      <div class="review">
+        <h3>⭐️⭐️⭐️⭐️⭐️</h3>
+        <p>"i lost my ruler in school and found it in 2 min"</p>
+        <small>- alex123_the_ruler</small>
+        <!-- <div class="reply">
+          <p class="adminmessg">"Thank you for this review. We appreciate your opinion on our product."</p>
+          <small class="adminuser">- The Finder </small>
+        </div> -->
       </div>
-    </div>
 
-    <div class="review">
-      <h3>⭐️⭐️⭐️⭐️</h3>
-      <p>"I stuck one on my cat’s collar. Now I always know where the furball is."</p>
-      <small>- Morgan_T</small>
-    </div>
-
-    <div class="review">
-      <h3>⭐️⭐️⭐️⭐️⭐️</h3>
-      <p>"It’s like Find My iPhone, but for literally anything. Love it."</p>
-      <small>- Jordan Raynor</small>
-      <div class="reply">
-        <p class="adminmessg">"Thank you for this review. We appreciate your opinion on our product."</p>
-        <small class="adminuser">- The Finder </small>
+      <div class="review">
+        <h3>⭐️⭐️⭐️⭐️</h3>
+        <p>"I stuck one on my cat’s collar. Now I always know where the furball is."</p>
+        <small>- Morgan_T</small>
       </div>
-    </div>
 
-    <div class="review">
-      <h3>⭐️⭐️⭐️⭐️</h3>
-      <p>"Found my wife with it"</p>
-      <small>- Henry_Kleshner_Jr.</small>
-    </div>
-
-    <div class="review">
-      <h3>⭐️⭐️⭐️⭐️⭐️</h3>
-      <p>"App so good I found the meaning of life."</p>
-      <small>- Chad_the_3rd</small>
-      <div class="reply">
-        <p class="adminmessg">"💀"</p>
-        <small class="adminuser">- The Finder </small>
+      <div class="review">
+        <h3>⭐️⭐️⭐️⭐️⭐️</h3>
+        <p>"It’s like Find My iPhone, but for literally anything. Love it."</p>
+        <small>- Jordan Raynor</small>
+        <!-- <div class="reply">
+          <p class="adminmessg">"Thank you for this review. We appreciate your opinion on our product."</p>
+          <small class="adminuser">- The Finder </small>
+        </div> -->
       </div>
-    </div>
+
+      <div class="review">
+        <h3>⭐️⭐️⭐️⭐️</h3>
+        <p>"Found my wife with it"</p>
+        <small>- Henry_Kleshner_Jr.</small>
+      </div>
+
+      <div class="review">
+        <h3>⭐️⭐️⭐️⭐️⭐️</h3>
+        <p>"App so good I found the meaning of life."</p>
+        <small>- Chad_the_3rd</small>
+        <div class="reply">
+          <p class="adminmessg">"💀"</p>
+          <small class="adminuser">- The Finder </small>
+        </div>
+      </div>
+    </section>
   </section>
-
   <footer>
     <p>Made by team – Shark Tank Project</p>
   </footer>
+  <script>
+  const container = document.querySelector('.review-section');
+  setInterval(() => {
+    container.scrollBy({ left: 1, behavior: 'smooth' });
+  }, 30); // scrolls 1px every 30ms
+  </script>
 </body>
 </html>

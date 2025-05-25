@@ -1,0 +1,47 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
+  color: #333;
+  padding: 20px;
+}
+
+.review-section {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px; /* space between boxes */
+  padding: 20px;
+  scroll-behavior: smooth; /* smooth scroll */
+}
+
+.review {
+  min-width: 300px;
+  flex-shrink: 0;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reply {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+.review h3 {
+  margin: 0 0 10px;
+  color: #ffaa00;
+}
+
+.review small {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
